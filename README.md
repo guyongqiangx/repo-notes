@@ -2,7 +2,13 @@
 
 ## 前言
 
-## repo命令帮助信息汇总
+## repo命令汇总
+
+### repo init
+
+### repo sync
+
+#### repo manifest
 
 
 
