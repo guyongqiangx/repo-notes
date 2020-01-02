@@ -5,4 +5,5 @@
 * [repo init](repo-init.md.md)
 * [repo manifest](repo-manifest.md)
 * [contact and benefits](contact-and-benefits.md)
+* [repo sync](repo-sync.md)
 
