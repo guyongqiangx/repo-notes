@@ -25,5 +25,48 @@
 
 > 同步的代码有很多功能特性分支，但是你只想下载感兴趣那个分支，但是通常一同步代码，所有库都会更新。就好像你去传达室取信件，结果传达室的大爷指给你一大麻袋，说信件全部都在这里了，你自己拿吧……
 
+## 2. repo sync 帮助信息
 
+```text
+$ repo sync -h
+Usage: repo sync [<project>...]
+
+Options:
+  -h, --help            show this help message and exit
+  -f, --force-broken    obsolete option (to be deleted in the future)
+  --fail-fast           stop syncing after first error is hit
+  --force-sync          overwrite an existing git directory if it needs to
+                        point to a different object directory. WARNING: this
+                        may cause loss of data
+  --force-remove-dirty  force remove projects with uncommitted modifications
+                        if projects no longer exist in the manifest. WARNING:
+                        this may cause loss of data
+  -l, --local-only      only update working tree, don't fetch
+  -n, --network-only    fetch only, don't update working tree
+  -d, --detach          detach projects back to manifest revision
+  -c, --current-branch  fetch only current branch from server
+  -q, --quiet           be more quiet
+  -j JOBS, --jobs=JOBS  projects to fetch simultaneously (default 1)
+  -m NAME.xml, --manifest-name=NAME.xml
+                        temporary manifest to use for this sync
+  --no-clone-bundle     disable use of /clone.bundle on HTTP/HTTPS
+  -u MANIFEST_SERVER_USERNAME, --manifest-server-username=MANIFEST_SERVER_USERNAME
+                        username to authenticate with the manifest server
+  -p MANIFEST_SERVER_PASSWORD, --manifest-server-password=MANIFEST_SERVER_PASSWORD
+                        password to authenticate with the manifest server
+  --fetch-submodules    fetch submodules from server
+  --no-tags             don't fetch tags
+  --optimized-fetch     only fetch projects fixed to sha1 if revision does not
+                        exist locally
+  --prune               delete refs that no longer exist on the remote
+  -s, --smart-sync      smart sync using manifest from the latest known good
+                        build
+  -t SMART_TAG, --smart-tag=SMART_TAG
+                        smart sync using manifest from a known tag
+
+  repo Version options:
+    --no-repo-verify    do not verify repo source code
+```
+
+## 最后更新: 2020/01/02
 

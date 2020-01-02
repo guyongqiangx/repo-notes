@@ -2,7 +2,7 @@
 
 ## 附录
 
-### repo init 命令帮助
+### 命令帮助信息
 
 ```text
 $ repo help init
