@@ -1,4 +1,4 @@
-# Initial page
+# repo速查教程
 
 ## 前言
 
